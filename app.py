@@ -24,19 +24,18 @@ def do_generate_password():
 
 @app.route("/", methods=["GET"])
 def index():
-    if request.method != "GET":
-        pass
-    else:
-        password = do_generate_password()
-        
-
-        return render_template(
-            "index.html",
-                release=RELEASE,
-                theme="green-beach",
-                length=len(password),
-                title="Password Generator", password=password, year=dt.now().year,
-            )
+    
+    password = do_generate_password()
+    
+    return render_template(
+        "index.html",
+        release=RELEASE,
+        theme="green-beach",
+        length=len(password),
+        title="Secure Password Generator",
+        password=password, 
+        year=dt.now().year,
+    )
 
 if __name__ == "__main__":
     app.run(
