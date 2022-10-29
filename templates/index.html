@@ -3,17 +3,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{{ title }}</title>
 
+    <meta name="title" content="password generator secure password free password powerfull stay safe">
+    <meta name="description" content="password generator secure password free password powerfull stay safe">
+    <meta name="keywords" content="password, generator, secure, password, free password generator powerfull stay safe">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="omar elfarsaoui">
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/onepagers-gradient.css" rel="stylesheet">
-    <link href="./css/gradients.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/onepagers-gradient.css" rel="stylesheet">
+    <link href="../static/css/gradients.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -60,13 +67,13 @@
     <div class="container-fluid">
       <!-- START SECTION 1 -->
       <div class="row">
-        <div class="col-md-12 leadsection innershadow {{ theme }}" id="section1">
+        <div class="col-md-12 leadsection  {{ theme }}" id="section1">
         <div class="col-md-1">
         </div>
         <div class="col-md-10">
           <!-- START SECTION 1 CONTENT -->
           <h1>{{ title }}</h1><br>
-          <p class="lead"><b>Your new password is</b></p>
+          <p class="lead"><b>Password length : {{ length }} </b></p>
           <p class="lead"><input type="text" id="password" size="40" value="{{ password }}"></p>
           <a class="btn btn-primary btn-lg bigger-btn btn-trans" onclick="copyPass()"><i class="fa fa-copy" aria-hidden="true"></i> Copy</a>
           <a class="btn btn-primary btn-lg bigger-btn btn-trans" onclick="reloadPage()"><i class="fa fa-refresh" aria-hidden="true"></i> New Password</a>
@@ -96,7 +103,7 @@
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="./js/bootstrap.min.js"></script>
+      <script src="../static/js/bootstrap.min.js"></script>
       <script>
 
         $(function () {
